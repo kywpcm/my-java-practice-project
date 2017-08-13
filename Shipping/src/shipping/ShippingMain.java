@@ -26,6 +26,7 @@ public class ShippingMain {
 		FuelNeedsReport report = new FuelNeedsReport();
 		report.generateText(System.out);  //���⼭ ���
 		
+		// 한글..?
 	}
 
 }
