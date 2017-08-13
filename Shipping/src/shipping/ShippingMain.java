@@ -9,22 +9,23 @@ public class ShippingMain {
 
 	public static void main(String[] args) {
 
-		//½Ì±ÛÅæÀ¸·Î
+		//ï¿½Ì±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Company company = Company.getInstance();
 		
-		//¿î¼Û¼ö´Ü Ãß°¡
-		//»óÀ§ Å¬·¡½º·Î ¹Þ´Â´Ù..
-		//²¨³»¿Ã ¶§µµ ±×¿¡ ¸Â°Ô..
+		//ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
+		//ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´Â´ï¿½..
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×¿ï¿½ ï¿½Â°ï¿½..
 		company.addVehicle(new Truck(10000.0, "Truck1"));
 		company.addVehicle(new Truck(15000.0, "Truck2"));
 		company.addVehicle(new RiverBarge(500000.0, "RiverBarge1"));
 		company.addVehicle(new Truck(9500.0, "Truck3"));
 		company.addVehicle(new RiverBarge(750000.0, "RiverBarge2"));
 		
-		//°è»êÇÏ´Â °´Ã¼
-		//¿©±â¼­ ¸®½ºÆ®¸¦ °¡Á®¿Í¾ß ÇÔ..
+		//ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½Ã¼
+		//ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¾ï¿½ ï¿½ï¿½..
 		FuelNeedsReport report = new FuelNeedsReport();
-		report.generateText(System.out);  //¿©±â¼­ °è»ê
+		report.generateText(System.out);  //ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½
+		
 	}
 
 }
