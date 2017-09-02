@@ -8,6 +8,7 @@ public class Main {
 		Main obj = new Main();
 		
 		System.out.println(str);
+		System.out.println("hash code : " + str.hashCode());
 		obj.getHashCode(str);
 		System.out.println(str);
 
