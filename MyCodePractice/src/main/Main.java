@@ -8,7 +8,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		PrintStar printstar = new PrintStar();
-		printstar.printStar(11);
+		printstar.printStar(4);
 	}
 
 }
