@@ -1,6 +1,6 @@
 package main;
 
-import model.PrintStar;
+import problems.PrintStar;
 
 public class Main {
 
