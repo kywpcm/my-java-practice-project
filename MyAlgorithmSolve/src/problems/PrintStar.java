@@ -1,5 +1,7 @@
 package problems;
 
+import java.util.Scanner;
+
 /**
  *
 별찍기 - 1 풀이
@@ -34,7 +36,11 @@ public class PrintStar {
 
 	// ...
 	
-	public void printStar(int n) {
+	public void printStar() {
+		
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		scan.close();
 		
 		String starStr = "*";
 		
