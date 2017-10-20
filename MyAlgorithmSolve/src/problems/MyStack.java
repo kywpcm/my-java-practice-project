@@ -61,8 +61,8 @@ top
  * @author kywpcm
  *
  */
-public class Stack {
+public class MyStack {
 
-	// ...
+	private int mComNum = 0;
 	
 }
