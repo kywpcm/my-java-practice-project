@@ -17,9 +17,18 @@ public class Main {
 			comNum = Integer.parseInt(br.readLine()); // 입력
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (NumberFormatException e) {
+			System.out.println("숫자만 입력해 주세요.");
+			return;
+		}
+		
+		if (comNum < 1 || comNum > 10000 ) {
+			System.out.println("1 이상 10000 이하의 수를 입력해 주세요.");
+			return;
 		}
 		
 		String comStr = "";
+		String[] command = {};
 		if (comNum > 0) {
 			
 			for (int i = 0; i < comNum; i++) {
@@ -29,12 +38,51 @@ public class Main {
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
+				
+				// 명령어 파싱
+				command = comStr.split(" ");
 				// test
-				System.out.println("comStr : " + comStr);
+				for (String com : command) {
+					System.out.println("com : " + com);
+				}
 				
-				// 명령어 파싱..
+				// 스택 서비스 호출
+				if (command[0].equals("push")) {
+					
+					int pushNum = -1;
+					try {
+						pushNum = Integer.parseInt(command[1]);
+					} catch (Exception e) {
+						System.out.println("push X 형식으로 입력해 주세요. (X : 양의 정수)");
+//						continue;
+					}
+					
+					if (1 <= pushNum && pushNum <= 100000) {
+						// TODO : 스택 서비스 호출..
+					} else {
+						// test
+						System.out.println("push X의 X는 1 이상 100000 이하 입니다. 다음 명령으로...");
+					}
+					
+				} else if (command[0].equals("pop")) {
+					
+				} else if (command[0].equals("size")) {
+					
+				} else if (command[0].equals("empty")) {
+					
+				} else if (command[0].equals("top")) {
+					
+				} else {
+					// test
+					System.out.println("해당하는 스택 서비스 없어요. 다음 명령으로...");
+				}
 				
-				// 스택 클래스 서비스 호출..
+			}
+			
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 			
 		} else {

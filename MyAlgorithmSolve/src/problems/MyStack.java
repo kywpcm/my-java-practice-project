@@ -63,6 +63,17 @@ top
  */
 public class MyStack {
 
-	private int mComNum = 0;
+	private int mIndex = 0; 		// 스택 포인터
+	private int[] mData = null; // 스택 데이터
+	
+	public MyStack () {
+		// 스택 size 초기화
+		mData = new int[10000];
+	}
+	
+	// TODO
+	public void push(int numData) {
+		
+	}
 	
 }
