@@ -1,8 +1,9 @@
-package main;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import problems.MyStack;
 
 public class Main {
 
@@ -25,6 +26,8 @@ public class Main {
 			return;
 		}
 		
+		// 스택 생성
+		MyStack stack = new MyStack();
 		String comStr = "";
 		String[] command = {};
 		if (comNum > 0) {
@@ -39,10 +42,6 @@ public class Main {
 				
 				// 명령어 파싱
 				command = comStr.split(" ");
-				// test
-				for (String com : command) {
-					System.out.println("com : " + com);
-				}
 				
 				// 스택 서비스 호출
 				if (command[0].equals("push")) {
@@ -56,22 +55,20 @@ public class Main {
 					}
 					
 					if (1 <= pushNum && pushNum <= 100000) {
-						// TODO : 스택 서비스 호출..
+						stack.push(pushNum);
 					} else {
-						// test
 						System.out.println("push X의 X는 1 이상 100000 이하 입니다. 다음 명령으로...");
 					}
 					
 				} else if (command[0].equals("pop")) {
-					
+					System.out.println(stack.pop());
 				} else if (command[0].equals("size")) {
-					
+					System.out.println(stack.size());
 				} else if (command[0].equals("empty")) {
-					
+					System.out.println(stack.empty());
 				} else if (command[0].equals("top")) {
-					
+					System.out.println(stack.top());
 				} else {
-					// test
 					System.out.println("해당하는 스택 서비스 없어요. 다음 명령으로...");
 				}
 				
@@ -88,5 +85,5 @@ public class Main {
 		}
 		
 	}
-
+	
 }

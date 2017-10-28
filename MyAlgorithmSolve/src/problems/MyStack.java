@@ -63,16 +63,72 @@ top
  */
 public class MyStack {
 
-	private int mIndex = 0; 		// 스택 포인터
+	private final int MAX_SIZE = 10000;
+	
 	private int[] mData = null; // 스택 데이터
+	private int mStackPtr;		// 스택 포인터
 	
 	public MyStack () {
 		// 스택 size 초기화
-		mData = new int[10000];
+		mData = new int[MAX_SIZE];
+		mStackPtr = -1;
 	}
 	
-	// TODO
 	public void push(int numData) {
+		
+		if(mStackPtr < MAX_SIZE) {
+			mStackPtr++;
+			mData[mStackPtr] = numData;
+		} else if (mStackPtr >= MAX_SIZE) {
+			System.out.println("Stack Overflow");
+		}
+	}
+	
+	public int pop() {
+		
+		// 스택 언더플로우 체크
+		if (mStackPtr < 0) {
+			System.out.println("Stack Underflow");
+			return -1;
+		}
+		
+		int popData = mData[mStackPtr];
+		
+		mData[mStackPtr] = 0; // int 배열은 어차피 다 0으로 초기화 되니까..
+		mStackPtr--;
+		
+		return popData;
+	}
+	
+	public int size() {
+		
+		int size;
+		if (mStackPtr < 0) {
+			size = 0;
+		} else {
+			size = mStackPtr + 1;
+		}
+		
+		return size;
+	}
+	
+	public int empty() {
+		
+		if (mStackPtr < 0) {
+			return 1;
+		} else {
+			return 0;
+		}
+		
+	}
+	
+	public int top() {
+		
+		if (mStackPtr < 0) {
+			return -1;
+		} else {
+			return mData[mStackPtr];
+		}
 		
 	}
 	
