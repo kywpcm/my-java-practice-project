@@ -1,13 +1,15 @@
-package vo;
+package entity;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
+// 클래스 자체가 비즈니스 키인 경우
 public class Product {
 
-	private int id; // 비즈니스 PK라고 하자.
-	private String name;
-	private BigDecimal price;
+	// (마치 DB의 복합키..)
+	private int id; 			  // 비즈니스 PK라고 하자.
+	private String name;		  // 비즈니스 PK라고 하자.
+	private BigDecimal price; // 비즈니스 PK라고 하자.
 	
 	/**
 	 * @param id
