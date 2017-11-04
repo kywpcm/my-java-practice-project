@@ -21,7 +21,7 @@ public class FuelNeedsReport {
 			
 			vehicle = company.getVehicle(i);
 			
-			fuel = vehicle.calcFuelNeeds();  //template method »£√‚
+			fuel = vehicle.calcFuelNeeds();  //template method pattern
 			output.println("Vehicle " + vehicle.getName() + " needs " + fuel + " liters of fuel,");
 //			if(vehicle instanceof Truck) {
 //				output.println("Vehicle " + ((Truck) vehicle).getName() + " needs " + fuel + " liters of fuel,");
