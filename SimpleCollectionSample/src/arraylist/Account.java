@@ -1,8 +1,7 @@
 package arraylist;
 
 //도메인 클래스
-//server..
-//Data Model..
+//Entity or VO
 public class Account {
 
 	private float balance;

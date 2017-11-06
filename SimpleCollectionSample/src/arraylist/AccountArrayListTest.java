@@ -8,8 +8,8 @@
 
 package arraylist;
 
-//client..
-//Use a AccountManagementArrayList class..
+//client
+//Use a AccountManagementArrayList class
 public class AccountArrayListTest {
 
 	public static void main(String[] args) {
