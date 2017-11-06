@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 //도메인 클래스
-//server..
-//has a Account class.. (1:*)
+//service or server
+//has Account classes (1:*)
 public class AccountManagementHashSet {
 
 	private HashSet<Account> accounts;
@@ -20,7 +20,7 @@ public class AccountManagementHashSet {
 	
 	public void insertAccount(float money, String accountNumber, String accountName) {
 		//key 객체가 Account 객체이기 때문에 Account 클래스에
-		//equals()메소드와 hashCode()메소드를 적절히 오버라이딩 해줘야 한다.
+		//equals() 메소드와 hashCode() 메소드를 적절히 오버라이딩 해줘야 한다.
 		accounts.add(new Account(money, accountNumber, accountName));
 	}
 	

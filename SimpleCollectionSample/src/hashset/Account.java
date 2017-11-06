@@ -1,14 +1,11 @@
 package hashset;
 
-import java.util.HashSet;
-
 //도메인 클래스
-//server..
-//Data Model..
+//Entity or VO
 public class Account {
 
 	private float balance;
-	private String accountNumber;
+	private String accountNumber; // 비즈니스 PK라고 하자.
 	private String accountName;
 	
 	public Account() {}
@@ -51,8 +48,8 @@ public class Account {
 	//HashSet의 add() 메소드 동작 중에 호출되어 진다.
 	@Override
 	public boolean equals(Object obj) {
-		Account account = (Account)obj;
-		return this.accountNumber.equals(account.getAccountNumber());
+		Account other = (Account)obj; // or that..
+		return this.accountNumber.equals(other.getAccountNumber());
 	}
 
 	//메소드 오버라이딩..

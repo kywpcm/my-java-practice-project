@@ -12,19 +12,20 @@ package hashset;
 import java.util.HashSet;
 import java.util.Iterator;
 
-//client..
-//Use a AccountManagementHashSet class..
+//client
+//Use a AccountManagementHashSet class
 public class AccountHashSetTest {
 
 	public static void main(String[] args) {
 
 		AccountManagementHashSet manager = new AccountManagementHashSet();
-		manager.insertAccount(15000, "1234", "james");
-		manager.insertAccount(25000, "1235", "tomas");
-		manager.insertAccount(35000, "1236", "percy1");
-		manager.insertAccount(45000, "1237", "edward");
+		manager.insertAccount(15000, "1237", "james");
+		manager.insertAccount(25000, "1238", "tomas");
+		manager.insertAccount(45000, "1236", "edward");
+		manager.insertAccount(35000, "1235", "percy1");
+		
 		//accountNumber를 기준으로
-		//Account 클래스에 equals()메소드와 hashCode()메소드를 오버라이딩 했기 때문에,
+		//Account 클래스에 equals() 메소드와 hashCode() 메소드를 오버라이딩 했기 때문에,
 		//중복된 값은 들어가지 않게 된다.
 		manager.insertAccount(55000, "1236", "percy2");
 		manager.insertAccount(65000, "1236", "percy3");
@@ -46,10 +47,10 @@ public class AccountHashSetTest {
 		Iterator ir = set.iterator();
 		while(ir.hasNext()) {
 			System.out.println(ir.next());
-			System.out.println();
 		}
+		System.out.println();
 		
-		String str1 = new String("Dog");  //String 클래스 안에 equals()와 hashCode()가 오버라이딩 되어 잇기 때문에
+		String str1 = new String("Dog");  //String 클래스 안에 equals()와 hashCode()가 오버라이딩 되어 있기 때문에
 		String str2 = new String("Dog");  //이 둘은 같은 객체이다.
 		set.add(str1);
 		set.add(str2);
