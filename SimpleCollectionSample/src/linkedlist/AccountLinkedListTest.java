@@ -12,7 +12,8 @@ package linkedlist;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-//client..
+//client
+//has Account classes (1:*)
 //더 많은 기능은 메소드를 직접 입력해 테스트 해 보자..
 //ListIterator와 혼합해서 사용하면 데이터 핸들링이 유리함
 public class AccountLinkedListTest {
