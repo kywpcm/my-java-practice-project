@@ -66,6 +66,6 @@ public class Account implements Comparator {
 	//	@Override
 	//	public int compareTo(Object o) {  //넘어온 것과 this 객체와 비교
 	//		return 0;
-	//	}	
+	//	}
 
 }
