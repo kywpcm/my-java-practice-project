@@ -10,8 +10,8 @@
 
 package treeset;
 
-//client..
-//Use a AccountManagementTreeSet class..
+//client
+//Use a AccountManagementTreeSet class
 public class AccountTreeSetTest {
 	
 	public static void main(String[] args) {

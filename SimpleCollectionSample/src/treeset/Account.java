@@ -1,11 +1,9 @@
 package treeset;
 
 import java.util.Comparator;
-import java.util.HashSet;
 
 //도메인 클래스
-//server..
-//Data Model..
+//Entity or VO
 public class Account implements Comparator {
 
 	private float balance;
@@ -52,7 +50,7 @@ public class Account implements Comparator {
 
 	//메소드 오버라이딩..
 	//TreeSet의 add() 메소드 동작 중에 호출되어 진다.
-	//엘리먼트 하나가 들어갈 때마다 자동으로 콜백
+	//엘리먼트 하나가 들어갈 때마다 호출됨.
 	@Override
 	public int compare(Object acc1, Object acc2) {  //비교하는 두 객체가 넘어온다.
 		int tempBalance1 = (int) ((Account)acc1).getBalance();
@@ -62,7 +60,7 @@ public class Account implements Comparator {
 	}
 
 	//implements Comparable 했을 경우..
-	//엘리먼트 하나가 들어갈 때마다 자동으로 콜백
+	//엘리먼트 하나가 들어갈 때마다 호출됨.
 	//	@Override
 	//	public int compareTo(Object o) {  //넘어온 것과 this 객체와 비교
 	//		return 0;

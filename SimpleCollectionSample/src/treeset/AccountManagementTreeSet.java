@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 //도메인 클래스
-//server..
-//has a Account class.. (1:*)
+//service or server
+//has Account classes (1:*)
 public class AccountManagementTreeSet {
 
 	private TreeSet<Account> accounts;
