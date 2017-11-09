@@ -1,13 +1,12 @@
 package hashmap;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
 //도메인 클래스
-//server..
-//has a Account class.. (1:*)
+//service or server
+//has Account classes (1:*)
 public class AccountManagementHashMap {
 
 	private HashMap<String, Account> accounts;

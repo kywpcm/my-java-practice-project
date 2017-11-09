@@ -8,8 +8,8 @@
 
 package hashmap;
 
-//client..
-//Use a AccountManagementHashMap class..
+//client
+//Use a AccountManagementHashMap class
 public class AccountHashMapTest {
 
 	public static void main(String[] args) {
