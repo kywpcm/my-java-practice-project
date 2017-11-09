@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.TreeMap;
 
 //도메인 클래스
-//server..
-//has a Account class.. (1:*)
+//service or server
+//has Account classes (1:*)
 public class AccountManagementTreeMap {
 
 	//key로 custom 객체를 사용한다.

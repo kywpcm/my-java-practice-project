@@ -8,8 +8,8 @@
 
 package treemap;
 
-//client..
-//Use a AccountManagementTreeMap class..
+//client
+//Use a AccountManagementTreeMap class
 public class AccountHashMapTest {
 
 	public static void main(String[] args) {

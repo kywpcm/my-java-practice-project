@@ -3,8 +3,7 @@ package treemap;
 import java.util.Comparator;
 
 //도메인 클래스
-//server..
-//Data Model..
+//Entity or VO
 public class AccountNumber implements Comparator {
 
 	String accountNumber;
@@ -21,8 +20,9 @@ public class AccountNumber implements Comparator {
 
 	@Override
 	public int compare(Object acc1, Object acc2) {
-		String tempAccountNumber1 = ((AccountNumber)acc1).getAccountNumber() ;
-	    String tempAccountNumber2 = ((AccountNumber)acc2).getAccountNumber() ;
+		String tempAccountNumber1 = ((AccountNumber)acc1).getAccountNumber();
+	    String tempAccountNumber2 = ((AccountNumber)acc2).getAccountNumber();
+	    // String의 compareTo 메소드
 	    //tempAccountNumber1 - tempAccountNumber2과 같다.
 	    return tempAccountNumber1.compareTo(tempAccountNumber2);
 	}
