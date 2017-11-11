@@ -2,7 +2,7 @@ package interrupt;
 
 public class TerminateThread extends Thread {
 
-	private boolean flag = false;
+	private boolean shouldTerminate = false;
 
 	public TerminateThread(String name) {
 		super(name);
@@ -11,9 +11,9 @@ public class TerminateThread extends Thread {
 	@Override
 	public void run() {
 		System.out.println(this.getName() + " start");
-		while(!flag) {
+		while(!shouldTerminate) {
 			try {
-				this.sleep(100);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -21,8 +21,8 @@ public class TerminateThread extends Thread {
 		System.out.println(this.getName() + " end");
 	}
 	
-	public void setFlag(boolean flag) {
-		this.flag = flag;
+	public void setTerminateFlag(boolean flag) {
+		this.shouldTerminate = flag;
 	}
 	
 }

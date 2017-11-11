@@ -18,17 +18,17 @@ public class TerminateThreaMain {
 		int i;
 		System.out.println("종료할 스레드를 선택하세요. A, B, C, M?\n");
 		while(true) {
-			i = System.in.read();
+			i = System.in.read(); // ..!?
 			if(i == 'A')
-				tt1.setFlag(true);
+				tt1.setTerminateFlag(true);
 			else if(i == 'B')
-				tt2.setFlag(true);
+				tt2.setTerminateFlag(true);
 			else if(i == 'C')
-				tt3.setFlag(true);
+				tt3.setTerminateFlag(true);
 			else if(i == 'M') {
-				tt1.setFlag(true);
-				tt2.setFlag(true);
-				tt3.setFlag(true);
+				tt1.setTerminateFlag(true);
+				tt2.setTerminateFlag(true);
+				tt3.setTerminateFlag(true);
 				System.out.println("main end");
 				break;
 			}

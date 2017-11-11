@@ -1,6 +1,6 @@
 package synchronization;
 
-//server
+//client
 //uses Bank
 public class ParkWife extends Thread {
 

@@ -1,9 +1,10 @@
 package synchronization;
 
 //client
+//has a Bank
 public class SyncMain {
 
-	public static Bank myBank = new Bank();  //클래스 변수
+	public static Bank myBank = new Bank(10000);  //클래스 변수
 	
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -13,7 +14,6 @@ public class SyncMain {
 		ParkWife pw = new ParkWife();
 		
 		p.start();
-		Thread.sleep(200);
 		pw.start();
 	}
 

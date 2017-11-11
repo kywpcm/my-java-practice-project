@@ -1,6 +1,7 @@
 package waitnotify;
 
 //client
+//has a VideoShop
 public class VideoShopMain {
 
 	public static VideoShop vShop = new VideoShop();  //클래스 변수
