@@ -1,4 +1,4 @@
-package problems;
+package fibonacci;
 
 /**
  * You have to climb up a ladder. The ladder has exactly N rungs, numbered from 1 to N. With each step, you can ascend by one or two rungs. More precisely:

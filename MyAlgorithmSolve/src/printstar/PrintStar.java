@@ -1,11 +1,12 @@
-package problems;
+package printstar;
 
 import java.util.Scanner;
 
 /**
- * 별찍기 - 1 풀이
+ * 별찍기 - 1
+문제집 
 시간 제한	메모리 제한	제출	정답	맞은 사람	정답 비율
-1 초	128 MB	23443	14417	13020	63.308%
+1 초	128 MB	26424	16113	14520	62.999%
 문제
 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제
 
@@ -27,6 +28,8 @@ import java.util.Scanner;
 출처
 문제를 만든 사람: baekjoon
 문제의 오타를 찾은 사람: grace0068 hchanhong
+알고리즘 분류
+출력
  * 
  * @author kywpcm
  *

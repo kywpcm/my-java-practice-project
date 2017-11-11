@@ -1,4 +1,4 @@
-package problems;
+package stack;
 
 /**
  * 스택

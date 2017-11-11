@@ -7,7 +7,5 @@ public class DerivedThread implements Runnable {
 			System.out.println(i);
 		}
 	}
-
-	
 	
 }

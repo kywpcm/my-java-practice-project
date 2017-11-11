@@ -1,9 +1,10 @@
-/*
+package stack;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import problems.MyStack;
+import stack.MyStack;
 
 public class MyStackMain {
 
@@ -87,4 +88,3 @@ public class MyStackMain {
 	}
 	
 }
-*/
