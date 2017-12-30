@@ -1,4 +1,4 @@
-package codility_first;
+package codility.first;
 
 import java.util.ArrayList;
 import java.util.HashMap;

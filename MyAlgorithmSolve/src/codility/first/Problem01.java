@@ -1,4 +1,4 @@
-package codility_first;
+package codility.first;
 
 public class Problem01 {
 
