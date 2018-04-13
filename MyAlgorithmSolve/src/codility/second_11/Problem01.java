@@ -1,4 +1,4 @@
-package codility.second;
+package codility.second_11;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package codility.third;
+package codility.third_bm;
 
 import java.util.ArrayList;
 import java.util.Collections;
