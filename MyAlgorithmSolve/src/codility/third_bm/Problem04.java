@@ -9,8 +9,8 @@ public class Problem04 {
 		Problem04 p04 = new Problem04();
 //		int[] intAry= {1, 2, 5, 9, 9};
 		int[] intAry= {1, 2, 5, 5, 9, 10, 11};
-//		int searchNum = 5;
-		int searchNum = 23;
+		int searchNum = 5;
+//		int searchNum = 23;
 		System.out.println("result : " + p04.solution(intAry, searchNum));
 
 	}
