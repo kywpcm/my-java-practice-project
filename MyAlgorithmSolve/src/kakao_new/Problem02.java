@@ -1,4 +1,4 @@
-package kakao_new.problem02;
+package kakao_new;
 
 import java.util.Stack;
 

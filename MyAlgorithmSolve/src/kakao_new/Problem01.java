@@ -1,7 +1,4 @@
-package kakao_new.problem01;
-
-import java.util.ArrayList;
-import java.util.List;
+package kakao_new;
 
 public class Problem01 {
 
