@@ -51,14 +51,17 @@ public class Main {
         /* Arrrays 클래스 sort */
         for (String item : array)
             System.out.println("array before sort : " + item);
-        Arrays.sort(array, new Comparator<String>() {
-
-            @Override
-            public int compare(String o1, String o2) {
-                return o1.compareTo(o2); // ascending order
-//                return o2.compareTo(o1); // descending order
-            }
-        });
+        // 1.
+        Arrays.sort(array);
+        // 2.
+//        Arrays.sort(array, new Comparator<String>() {
+//
+//            @Override
+//            public int compare(String o1, String o2) {
+//                return o1.compareTo(o2); // ascending order
+////                return o2.compareTo(o1); // descending order
+//            }
+//        });
         for (String item : array)
             System.out.println("sorted array : " + item);
 
