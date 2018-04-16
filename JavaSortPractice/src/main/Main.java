@@ -62,6 +62,17 @@ public class Main {
         for (String item : array)
             System.out.println("sorted array : " + item);
 
+
+        /* Selection Sort (선택 정렬) */
+
+        /* Insertion Sort (삽입 정렬) */
+
+        /* Bubble Sort (거품 정렬) */
+
+        /* Quick Sort (빠른 정렬) */
+
+        /* Heap Sort (힙 정렬) */
+
     }
 
 }
