@@ -1,4 +1,4 @@
-package codility.third_bm;
+package codility._03_bm;
 
 public class Problem04 {
 
