@@ -39,7 +39,7 @@ public class StringTest {
 
         StringBuilder inputBuilder = new StringBuilder();
         long bytes;
-        for (int i = 1; i <= 50000000; i++) {
+        for (int i = 1; i <= 100000000; i++) {
             inputBuilder.append(this.input);
 
             if (i % 10000 == 0) {
@@ -57,7 +57,7 @@ public class StringTest {
 
         StringBuffer inputBuffer = new StringBuffer();
         long bytes;
-        for (int i = 1; i <= 50000000; i++) {
+        for (int i = 1; i <= 100000000; i++) {
             inputBuffer.append(this.input);
 
             if (i % 10000 == 0) {
