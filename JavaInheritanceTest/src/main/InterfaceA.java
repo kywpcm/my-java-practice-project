@@ -10,6 +10,7 @@ public interface InterfaceA extends List { // 인터페이스는 인터페이스
     boolean equals(Object obj);
 
     // List의 abstract 메소드 오버라이딩
+    // 계층구조 아래에 구현되어져 있음
     @Override
     int size();
 
@@ -29,6 +30,10 @@ public interface InterfaceA extends List { // 인터페이스는 인터페이스
     @Override
     default Object remove(int index) {
         return null;
+    }
+
+    public static void myStaticMethodInInter() {
+        System.out.println("myStaticMethodInInter~");
     }
 
 }

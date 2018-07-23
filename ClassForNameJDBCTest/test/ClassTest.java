@@ -36,6 +36,17 @@ public class ClassTest {
 
     @Test
     public void testJDBC() {
+        /*****************************************************************
+         * - java.sql 패키지 JDBC SPI 제공
+         *   - Connection 인터페이스
+         *   - DriverManager 클래스
+         * - Vendor가 구현해야 하는 부분
+         *   - Driver 클래스
+         *   - Connection 구현체
+         * - Class.forName 메소드 실행시 Class-loader가 클래스를 로딩할 때, 드라이버 클래스의 static block이 실행되고,
+         *   여기서 드라이버 객체를 DriverManager에 등록시킴.
+         *****************************************************************/
+
         Connection conn = null;
         try {
             String url = "jdbc:mysql://localhost:3306/for_backend_master";
