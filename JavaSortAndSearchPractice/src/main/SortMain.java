@@ -2,10 +2,11 @@ package main;
 
 import java.util.*;
 
-public class Main {
+public class SortMain {
 
     public static void main(String[] args) {
 
+        /* Create List */
         List<String> list = Arrays.asList("banana", "apple", "cup", "egg", "fire~", "desk");
         if (list instanceof ArrayList)
             System.out.println("ArrayList");
