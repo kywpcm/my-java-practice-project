@@ -158,7 +158,7 @@ public class QueryTest {
     public void testRemoveComment() {
         // StringBuilder vs. String
         // => 문자열이 많이 길어지면 StringBuilder가 더 빠름
-        // => StringTest 클래스 참조
+        // => test.StringTest 클래스 참조
         StringBuilder sb = new StringBuilder(this.input);
         for (int i = 1; i <= 10; i++) {
             sb.append(sb);

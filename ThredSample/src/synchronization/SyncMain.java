@@ -4,7 +4,7 @@ package synchronization;
 //has a Bank
 public class SyncMain {
 
-	public static Bank myBank = new Bank(10000);  //클래스 변수
+	public static final Bank myBank = new Bank(10000);  //클래스 변수
 	
 	public static void main(String[] args) throws InterruptedException {
 		

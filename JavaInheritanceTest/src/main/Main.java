@@ -8,7 +8,7 @@ import java.util.ListIterator;
 public class Main implements InterfaceA { // 구현체는 상속 관계 상위 abstract 메소드까지 모두 구현해야 함
 
     public static void main(String[] args) {
-
+        InterfaceA.myStaticMethodInInter();
     }
 
     // equals는 구현 안해도 됨 (Object에 구현되어 있음)
