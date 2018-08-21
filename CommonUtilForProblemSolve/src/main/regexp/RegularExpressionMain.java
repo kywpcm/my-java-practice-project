@@ -1,5 +1,6 @@
+package main.regexp;
 
-public class Main {
+public class RegularExpressionMain {
 
 	public static void main(String[] args) {
 
