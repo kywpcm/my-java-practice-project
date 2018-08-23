@@ -30,21 +30,21 @@
 - sorting 관련 자바 API
 - sorting 알고리즘
 
-### 10. JavaInheritanceTest
+### 9. JavaInheritanceTest
 > 인터페이스 상속, 구현시 생길 수 있는 여러가지 경우 test
 
-### 11. RemoveCommentInQueryTest
+### 10. RemoveCommentInQueryTest
 > 2가지 방법의 쿼리 주석 제거 속도 test
 - 정규식 사용
 - indexOf 메소드 character 제어
 
-### 12. StringBuilderVsBufferTest
+### 11. StringBuilderVsBufferTest
 > String 관련 연산 및 클래스 속도 비교 test
 - String concat(+)
 - StringBuilder
 - StringBuffer
 
-### 13. ClassForNameJDBCTest
+### 12. ClassForNameJDBCTest
 > Class 클래스의 forName 메소드 등 test. JDBC 드라이버 로딩 테스트
 - java.sql 패키지 JDBC SPI 제공
   - Connection 인터페이스
@@ -53,6 +53,6 @@
   - Driver 클래스
   - Connection 구현체
 
-### 14. AES256Test
+### 13. AES256Test
 > AES256 알고리즘 암복호화 test
 - AES256 지원 JCE 라이브러리 포함 (기본 Java는 AES128까지 지원)
