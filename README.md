@@ -1,7 +1,7 @@
 # my-java-practice-project
 
 ### 1. Shipping
-> 각 운송 수단에 대한 계획된 운송에 필요한 연료 관련 보고서를 report 하는 프로그램, 클라이언트 역할을 하는 ShippingMain과 FuelNeedsReport 클래스, 서버 역할을 하는 도메인인 Company 클래스, Vehicle 추상 클래스(서비스), Vehicle을 상속하는 Truck과 RiverBarge 클래스. 주석 처리 완료
+> 각 운송 수단에 필요한 연료를 구하는 프로그램, ShippingMain과 FuelNeedsReport 요청 클래스, Company 클래스, Vehicle 추상 클래스, Vehicle을 상속하는 Truck과 RiverBarge 서비스 클래스. 주석 처리 완료
 - polymorphism, template method design pattern
 
 ### 2. SimpleCollectionSample
@@ -22,30 +22,29 @@
 ### 7. MyAlgorithmSolve
 > 알고리즘 연습 프로젝트
 
-### 8. JavaSortPractice
-> 자바 sorting 관련 pratice
-- 제공되는 sorting 관련 자바 API
+### 8. CommonUtilForProblemSolve
+> 문제해결을 위한 일반적 도구
+#### 1) 정규식 관련 샘플 코드
+- case : replaceAll 메소드
+#### 2) 자바 sorting 관련 pratice
+- sorting 관련 자바 API
 - sorting 알고리즘
 
-### 9. JavaRegularExpression
-> 정규식 관련 샘플 코드
-- case : replaceAll 메소드
-
-### 10. JavaInheritanceTest
+### 9. JavaInheritanceTest
 > 인터페이스 상속, 구현시 생길 수 있는 여러가지 경우 test
 
-### 11. RemoveCommentInQueryTest
+### 10. RemoveCommentInQueryTest
 > 2가지 방법의 쿼리 주석 제거 속도 test
 - 정규식 사용
 - indexOf 메소드 character 제어
 
-### 12. StringBuilderVsBufferTest
+### 11. StringBuilderVsBufferTest
 > String 관련 연산 및 클래스 속도 비교 test
 - String concat(+)
 - StringBuilder
 - StringBuffer
 
-### 13. ClassForNameJDBCTest
+### 12. ClassForNameJDBCTest
 > Class 클래스의 forName 메소드 등 test. JDBC 드라이버 로딩 테스트
 - java.sql 패키지 JDBC SPI 제공
   - Connection 인터페이스
@@ -54,6 +53,6 @@
   - Driver 클래스
   - Connection 구현체
 
-### 14. AES256Test
+### 13. AES256Test
 > AES256 알고리즘 암복호화 test
 - AES256 지원 JCE 라이브러리 포함 (기본 Java는 AES128까지 지원)
