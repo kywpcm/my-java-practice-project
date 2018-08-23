@@ -1,7 +1,7 @@
 # my-java-practice-project
 
 ### 1. Shipping
-> 각 운송 수단에 대한 계획된 운송에 필요한 연료 관련 보고서를 report 하는 프로그램, 클라이언트 역할을 하는 ShippingMain과 FuelNeedsReport 클래스, 서버 역할을 하는 도메인인 Company 클래스, Vehicle 추상 클래스(서비스), Vehicle을 상속하는 Truck과 RiverBarge 클래스. 주석 처리 완료
+> 각 운송 수단에 필요한 연료를 구하는 프로그램, ShippingMain과 FuelNeedsReport 요청 클래스, Company 클래스, Vehicle 추상 클래스, Vehicle을 상속하는 Truck과 RiverBarge 서비스 클래스. 주석 처리 완료
 - polymorphism, template method design pattern
 
 ### 2. SimpleCollectionSample
