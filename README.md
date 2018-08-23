@@ -22,14 +22,13 @@
 ### 7. MyAlgorithmSolve
 > 알고리즘 연습 프로젝트
 
-### 8. JavaSortPractice
-> 자바 sorting 관련 pratice
-- 제공되는 sorting 관련 자바 API
-- sorting 알고리즘
-
-### 9. JavaRegularExpression
-> 정규식 관련 샘플 코드
+### 8. CommonUtilForProblemSolve
+> 문제해결을 위한 일반적 도구
+1) 정규식 관련 샘플 코드
 - case : replaceAll 메소드
+2) 자바 sorting 관련 pratice
+- sorting 관련 자바 API
+- sorting 알고리즘
 
 ### 10. JavaInheritanceTest
 > 인터페이스 상속, 구현시 생길 수 있는 여러가지 경우 test
