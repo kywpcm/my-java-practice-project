@@ -24,9 +24,9 @@
 
 ### 8. CommonUtilForProblemSolve
 > 문제해결을 위한 일반적 도구
-1) 정규식 관련 샘플 코드
+#### 1) 정규식 관련 샘플 코드
 - case : replaceAll 메소드
-2) 자바 sorting 관련 pratice
+#### 2) 자바 sorting 관련 pratice
 - sorting 관련 자바 API
 - sorting 알고리즘
 
