@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AES256Test/AES256Test.iml" filepath="$PROJECT_DIR$/AES256Test/AES256Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BasicRemoteMethodInvocationSample/BasicRemoteMethodInvocationSample.iml" filepath="$PROJECT_DIR$/BasicRemoteMethodInvocationSample/BasicRemoteMethodInvocationSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassForNameJDBCTest/ClassForNameJDBCTest.iml" filepath="$PROJECT_DIR$/ClassForNameJDBCTest/ClassForNameJDBCTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonUtilForProblemSolve/CommonUtilForProblemSolve.iml" filepath="$PROJECT_DIR$/CommonUtilForProblemSolve/CommonUtilForProblemSolve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImmutableStringTest/ImmutableStringTest.iml" filepath="$PROJECT_DIR$/ImmutableStringTest/ImmutableStringTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaInheritanceTest/JavaInheritanceTest.iml" filepath="$PROJECT_DIR$/JavaInheritanceTest/JavaInheritanceTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyAlgorithmSolve/MyAlgorithmSolve.iml" filepath="$PROJECT_DIR$/MyAlgorithmSolve/MyAlgorithmSolve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjIdentityAndEquality/ObjIdentityAndEquality.iml" filepath="$PROJECT_DIR$/ObjIdentityAndEquality/ObjIdentityAndEquality.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoveCommentInQueryTest/RemoveCommentInQueryTest.iml" filepath="$PROJECT_DIR$/RemoveCommentInQueryTest/RemoveCommentInQueryTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shipping/Shipping.iml" filepath="$PROJECT_DIR$/Shipping/Shipping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleCollectionSample/SimpleCollectionSample.iml" filepath="$PROJECT_DIR$/SimpleCollectionSample/SimpleCollectionSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringBuilderVsBufferTest/StringBuilderVsBufferTest.iml" filepath="$PROJECT_DIR$/StringBuilderVsBufferTest/StringBuilderVsBufferTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThredSample/ThredSample.iml" filepath="$PROJECT_DIR$/ThredSample/ThredSample.iml" />
+    </modules>
+  </component>
+</project>
