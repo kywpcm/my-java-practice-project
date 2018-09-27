@@ -8,11 +8,14 @@ public class Problem03 {
 
     public static void main(String[] args) {
 
+//        int[] collection = {1, 3, 4};
 //        int[] collection = {4, 6, 12, 8};
-        int[] collection = {1, 3, 4};
-//        int[] collection = {1, 2, 3, 4, 5};
-//        int[] collection = {1, 3};
-        int d = 7;
+        int[] collection = {1, 2, 3, 4};
+
+//        int[] collection = {3, 1, 3, 4, 7};
+//        int[] collection = {4, 4, 6, 12, 8, 14};
+//        int[] collection = {4, 1, 2, 3, 4, 5};
+        int d = 5;
 
         Problem03 m03 = new Problem03();
         int[] re = m03.hackerCards(collection, d);
