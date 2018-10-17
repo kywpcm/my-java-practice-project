@@ -34,7 +34,7 @@ public class StandardInputMain {
 
         // 구분자 token : 엔터
         // 공백도 데이터
-        // Enter도 구분자 token으로 써야하기 때문에 들어옴
+        // Enter도 구분자 token으로 써야하기 때문에 (입력 버퍼에) 들어옴
         String str2 = scanner.nextLine();
         System.out.println(str2);
 
@@ -46,6 +46,11 @@ public class StandardInputMain {
             e.printStackTrace();
         }
         System.out.println("BufferedReader readLine print : " + input);
+        try {
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
