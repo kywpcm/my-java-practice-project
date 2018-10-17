@@ -16,8 +16,8 @@ public class ClassTest {
     @Test
     public void testClassForName() {
         try {
-            Class c = Class.forName("foo.Foo");
-//            Class c = Class.forName("foo.Foo", true, this.getClass().getClassLoader()); // 위와 같음
+            Class c = Class.forName("main.foo.Foo");
+//            Class c = Class.forName("main.foo.Foo", true, this.getClass().getClassLoader()); // 위와 같음
             System.out.println(c);
 //            System.out.println((Foo) c);
             System.out.println(c.getName());
@@ -27,7 +27,7 @@ public class ClassTest {
 
             System.out.println();
 
-            Class c2 = Class.forName("boo.Boo");
+            Class c2 = Class.forName("main.boo.Boo");
             System.out.println(c2);
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
@@ -35,7 +35,7 @@ public class ClassTest {
     }
 
     @Test
-    public void testJDBC() {
+    public void testJDBC() throws ClassNotFoundException {
         /*****************************************************************
          * - java.sql 패키지 JDBC SPI 제공
          *   - Connection 인터페이스
@@ -43,7 +43,7 @@ public class ClassTest {
          * - Vendor가 구현해야 하는 부분
          *   - Driver 클래스
          *   - Connection 구현체
-         * - Class.forName 메소드 실행시 Class-loader가 클래스를 로딩할 때, 드라이버 클래스의 static block이 실행되고,
+         * - Class.forName 메소드 실행시 클래스 로더가 클래스를 로딩할 때, Driver 클래스의 static block이 실행되고,
          *   여기서 드라이버 객체를 DriverManager에 등록시킴.
          *****************************************************************/
 
