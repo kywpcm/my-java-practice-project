@@ -8,6 +8,7 @@ public class SortMain {
 
         /* Create List */
         // 1. Arrays.asList()
+        // 구현체는 ArrayList
         List<String> list = Arrays.asList("banana", "apple", "cup", "egg", "fire~", "desk");
         if (list instanceof ArrayList) System.out.println("ArrayList");
         else if (list instanceof List) System.out.println("List");
@@ -52,11 +53,12 @@ public class SortMain {
         for (String item : array)
             System.out.println("array before sort : " + item);
         // 1. Arrays.sort - primitive type
-        // Dual Pivot Quick Sort 사용. nlogn 기대할 수 있지만, 최악의 경우 n^2
-//        Arrays.sort(array);
+        // DualPivotQuicksort 사용. 평균 nlogn 기대할 수 있지만, 최악의 경우 n^2
+//        int[] intArr = {4, 1, 3, 5, 2};
+//        Arrays.sort(intArr);
         // 2. Arrays.sort - object type
         // Merge Sort 또는 TimSort 사용. 최악의 경우도 nlogn
-        Arrays.sort(array, new Comparator<String>() {
+        Arrays.sort(array, new Comparator<String>() { // Comparator 생략하면 디폴트 오름차순 정렬
 
             @Override
             public int compare(String o1, String o2) {
