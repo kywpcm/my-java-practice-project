@@ -3,8 +3,7 @@ package goorm._01_bm_problem;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -43,38 +42,50 @@ public class Problem03 {
         for (String str : list)
             System.out.println("str : " + str);
 
-        String patternStr = "(19|20)\\d{2}[- /.]*(0[1-9]|1[012])[- /.]*(0[1-9]|[12][0-9]|3[01])"; // 날자를 패턴으로 지정
+        Pattern p = Pattern.compile("(20|\\d{2})?\\d{2}[/\\-년]+(0?[1-9]|1[012])[/\\-월]+(3[01]|[12][0-9]|0?[1-9])[일]?");
 
-        Pattern p = Pattern.compile("(20)?\\d{2}[/\\-년]+(0?[1-9]|1[012])[/\\-월]+(0?[1-9]|[12][0-9]|3[01])[일]?");
-        List<String> dateList = new ArrayList<>();
+        List<Map<String, String>> memoDateList = new ArrayList<>();
+        Map<String, String> map;
         // 입력 순서대로
-        for (int i = 0; i < list.size(); i++) {
-            Matcher m = p.matcher(list.get(i));
-            String date = "";
+        for (String memo : list) {
+            Matcher m = p.matcher(memo);
+            String date;
             if (m.find()) {
+                map = new HashMap<>();
+                map.put("memo", memo);
+
                 date = m.group();
                 // test
                 System.out.println("date : " + date);
 
-//                String[] splitedStr = date.split("[/|\\-|[년월일]]");
-//                if (splitedStr[0].length() == 2) { // 17, 18, ...
-//                    splitedStr[0] = "20" + splitedStr[0];
-//                }
-//                if (splitedStr[1].length() == 1) { // 1 ~ 9
-//                    splitedStr[1] = "0" + splitedStr[1];
-//                }
-//                if (splitedStr[2].length() == 1) { // 1 ~ 9
-//                    splitedStr[2] = "0" + splitedStr[2];
-//                }
-//
-//                dateList.add(splitedStr[0] + splitedStr[1] + splitedStr[2]);
+                String[] splitedDate = date.split("[/\\-년월일]");
+                if (splitedDate[0].length() == 2) // 17, 18, ...
+                    splitedDate[0] = "20" + splitedDate[0];
+                if (splitedDate[1].length() == 1) // 1 ~ 9
+                    splitedDate[1] = "0" + splitedDate[1];
+                if (splitedDate[2].length() == 1) // 1 ~ 9
+                    splitedDate[2] = "0" + splitedDate[2];
+
+                map.put("date", splitedDate[0] + splitedDate[1] + splitedDate[2]);
+
+                memoDateList.add(map);
             }
         }
 
         // test
-        for (String str : dateList)
-            System.out.println(str);
+        for (Map<String, String> item : memoDateList)
+            System.out.println(item);
 
+        // sort
+        memoDateList.sort(new Comparator<Map<String, String>>() {
+            @Override
+            public int compare(Map<String, String> o1, Map<String, String> o2) {
+                return o1.get("date").compareTo(o2.get("date")); // ascending order
+//                return o2.compareTo(o1); // descending order
+            }
+        });
+        for (Map<String, String> item : memoDateList)
+            System.out.println(item.get("memo"));
 
         try {
             br.close();

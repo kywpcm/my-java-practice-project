@@ -56,7 +56,21 @@ public class RegularExpressionMain {
 		System.out.println("33. " + "ac41B4777B".replaceAll("4*B", "❤"));
 		System.out.println("34. " + "ac41B4777B".replaceAll("4.*B", "❤"));
 		System.out.println("35. " + "ac41B4777B".replaceAll("4.?B", "❤"));
-		
+
+		// practice
+		String regex = "(20|\\d{2})?\\d{2}[/\\-년]+(0?[1-9]|1[012])[/\\-월]+(3[01]|[12][0-9]|0?[1-9])[일]?";
+		System.out.println("36. " + "2018/7/3".replaceAll(regex, "❤"));
+		System.out.println("37. " + "2018/07/03".replaceAll(regex, "❤"));
+		System.out.println("38. " + "18/12/31".replaceAll(regex, "❤"));
+		System.out.println("39. " + "1918/12/31".replaceAll(regex, "❤"));
+		System.out.println("40. " + "18년06월13일".replaceAll(regex, "❤"));
+		System.out.println("41. " + "18년6월07일".replaceAll(regex, "❤"));
+		System.out.println("42. " + "1918년6월07일".replaceAll(regex, "❤"));
+		System.out.println("43. " + "18-06-12".replaceAll(regex, "❤"));
+		System.out.println("44. " + "18-6-3".replaceAll(regex, "❤"));
+		System.out.println("45. " + "18-6-03".replaceAll(regex, "❤"));
+		System.out.println("46. " + "2018-6-03".replaceAll(regex, "❤"));
+		System.out.println("47. " + "1918-01-01".replaceAll(regex, "❤"));
 	}
 
 }
