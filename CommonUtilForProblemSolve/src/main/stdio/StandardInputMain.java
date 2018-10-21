@@ -17,25 +17,25 @@ public class StandardInputMain {
          */
 
         // Scanner는 표준 입력 Enter(newLine, 개행) 칠 때까지 입력을 받음
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // 구분자 token : 공백
         // Enter는 취급하지 않음
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         System.out.println(n);
 
         // 구분자 token : 공백
         // Enter는 취급하지 않음
-        String str = scanner.next();
+        String str = sc.next();
         System.out.println(str);
 
         // 해결 방법
-//        scanner.nextLine();
+//        sc.nextLine();
 
         // 구분자 token : 엔터
         // 공백도 데이터
         // Enter도 구분자 token으로 써야하기 때문에 (입력 버퍼에) 들어옴
-        String str2 = scanner.nextLine();
+        String str2 = sc.nextLine();
         System.out.println(str2);
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -46,7 +46,9 @@ public class StandardInputMain {
             e.printStackTrace();
         }
         System.out.println("BufferedReader readLine print : " + input);
+
         try {
+            sc.close();
             br.close();
         } catch (IOException e) {
             e.printStackTrace();

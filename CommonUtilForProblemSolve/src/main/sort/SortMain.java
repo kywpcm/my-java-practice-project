@@ -68,6 +68,50 @@ public class SortMain {
         });
         for (String item : array)
             System.out.println("sorted array : " + item);
+        System.out.println();
+
+
+
+        /* Map 정렬 */
+
+        // 1. key 기준 정렬
+
+        // LinkedHashMap 사용
+        // 넣는 순서대로 순서 보장
+        Map<Integer, String> map = new LinkedHashMap<>();
+//        Map<Integer, String> map = new HashMap<>();
+        map.put(4, "권영우4");
+        map.put(5, "권영우5");
+        map.put(6, "권영우6");
+        map.put(1, "권영우1");
+        map.put(2, "권영우2");
+        map.put(3, "권영우3");
+        System.out.println(map);
+
+        // TreeMap 사용
+        // key 값을 기준으로 자동으로 정렬 해주는 자료구조
+        Map<Integer, String> tm = new TreeMap<>(map);
+        System.out.println(tm);
+
+
+        // 2. value 기준 정렬
+        // 임의의 리스트를 만들어서 정렬한다.
+        System.out.println(map);
+        List<Map.Entry<Integer, String>> list2 = new ArrayList<>(map.entrySet());
+//        list2.addAll(map.keySet());
+        list2.sort(new Comparator<Map.Entry<Integer, String>>() {
+            @Override
+            public int compare(Map.Entry<Integer, String> o1, Map.Entry<Integer, String> o2) {
+
+                return o1.getValue().compareTo(o2.getValue());
+            }
+        });
+        System.out.println(list2);
+        // 리스트를 다시 맵으로 만들어 준다.
+        Map<Integer, String> map2 = new LinkedHashMap<>();
+        for (Map.Entry<Integer, String> e : list2)
+            map2.put(e.getKey(), e.getValue());
+        System.out.println(map2);
 
 
 
