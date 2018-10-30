@@ -9,6 +9,8 @@ public class Main implements InterfaceA { // 구현체는 상속 관계 상위 a
 
     public static void main(String[] args) {
         InterfaceA.myStaticMethodInInter();
+        System.out.println(InterfaceA.str1);
+        System.out.println(InterfaceA.str2);
     }
 
     // equals는 구현 안해도 됨 (Object에 구현되어 있음)
