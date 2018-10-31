@@ -1,8 +1,6 @@
 import org.junit.Test;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class ClassTest {
 
@@ -47,17 +45,23 @@ public class ClassTest {
          *   여기서 드라이버 객체를 DriverManager에 등록시킴.
          *****************************************************************/
 
-        Connection conn = null;
-        try {
-            String url = "jdbc:mysql://localhost:3306/for_backend_master";
-            String id = "root";
-            String pw = "y98122514w";
+        String url = "jdbc:mysql://localhost:3306/for_backend_master";
+        String id = "root";
+        String pw = "y98122514w";
+//        Class.forName("com.mysql.jdbc.Driver");
+//        Class.forName("oracle.jdbc.driver.OracleDriver");
 
-//            Class.forName("com.mysql.jdbc.Driver");
-//            Class.forName("oracle.jdbc.driver.OracleDriver");
-            conn = DriverManager.getConnection(url, id, pw);
+        // try-with-resources (since 1.7)
+        try (Connection conn = DriverManager.getConnection(url, id, pw);
+             Statement stmt = conn.createStatement();
+             PreparedStatement pstmt = conn.prepareStatement("select 1");
+             CallableStatement cstmt = conn.prepareCall("select 1")) {
 
             System.out.println("제대로 연결되었습니다.");
+
+            stmt.executeQuery("select 1");
+            pstmt.executeQuery();
+            cstmt.executeQuery();
         } catch (SQLException se) {
             se.printStackTrace();
         }
