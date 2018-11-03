@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 while IFS= read -r LINE
 do
   SRC_FILE=`awk '{

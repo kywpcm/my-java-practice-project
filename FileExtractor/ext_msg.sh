@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "------------------ Making Report -----------------"
 find . -name "*.txt" | xargs grep $1 > report_$1.res
 
