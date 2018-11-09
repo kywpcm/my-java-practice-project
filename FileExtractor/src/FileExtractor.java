@@ -79,7 +79,7 @@ public class FileExtractor {
             fis = new FileInputStream(srcFile);
             fos = new FileOutputStream(targetFile);
 
-            byte[] buffer = new byte[512];
+            byte[] buffer = new byte[1024];
             int length;
             while ((length = fis.read(buffer)) != -1) {
                 fos.write(buffer, 0, length);
