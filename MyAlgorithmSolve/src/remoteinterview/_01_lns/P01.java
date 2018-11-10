@@ -3,9 +3,7 @@ package remoteinterview._01_lns;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class P01 {
 
@@ -21,36 +19,38 @@ public class P01 {
             e.printStackTrace();
         }
 
-        String[] prices = input.split("\\s");
-        List<String> list = new ArrayList<>();
-        for (String price : prices)
-            list.add(price);
-        // test
-//        System.out.println(list);
+        String[] prices = input != null ? input.split("\\s") : new String[0];
 
-        List<Integer> reList = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-            if (!reList.contains(Integer.parseInt(list.get(i))))
-                reList.add(Integer.parseInt(list.get(i)));
-        }
-        // test
-//        System.out.println(reList);
-        if (reList.size() < 3) {
+        // 중복 제거
+        // 1. not contains 사용
+//        List<Integer> reList = new ArrayList<>();
+//        for (String price : prices) {
+//            if (!reList.contains(Integer.parseInt(price)))
+//                reList.add(Integer.parseInt(price));
+//        }
+        // 2. Set 사용
+        Integer[] iPrices = new Integer[prices.length];
+        for (int i = 0; i < prices.length; i++)
+            iPrices[i] = Integer.parseInt(prices[i]);
+        Set<Integer> priceSet = new HashSet<>(Arrays.asList(iPrices));
+        iPrices = priceSet.toArray(new Integer[0]);
+
+        if (priceSet.size() < 3) {
             System.out.println("-1");
             return;
         }
 
         // 정렬
-        reList.sort(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o1.compareTo(o2);
-            }
-        });
-        // test
-//        System.out.println(reList);
+//        reList.sort(new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer o1, Integer o2) {
+//                return o1.compareTo(o2);
+//            }
+//        });
+        Arrays.sort(iPrices);
 
-        System.out.println(reList.get(2));
+//        System.out.println(reList.get(2));
+        System.out.println(iPrices[2]);
     }
 
 }

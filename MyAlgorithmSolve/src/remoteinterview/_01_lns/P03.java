@@ -24,9 +24,7 @@ public class P03 {
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = null;
-
         List<String[]> list = new ArrayList<>();
-
         try {
             while (true) {
                 input = br.readLine();
@@ -38,15 +36,10 @@ public class P03 {
             e.printStackTrace();
         }
 
-        // test
-//        for (String str[] : list)
-//            System.out.println(str[0] + " " + str[1]);
-//        System.out.println();
-
         for (int i = 0; i < list.size(); i++) {
             String[] fromTo1 = list.get(0);
             String[] fromTo2;
-            if (i != list.size() - 1)
+            if (i != list.size() - 1) // 마지막 인덱스 검사
                 fromTo2 = list.get(i + 1);
             else break;
 
@@ -54,9 +47,9 @@ public class P03 {
             if (Integer.parseInt(fromTo1[1]) >= Integer.parseInt(fromTo2[0])) {
                 newFromTo[0] = fromTo1[0];
                 newFromTo[1] = fromTo2[1];
-                list.remove(0); list.remove(i);
+                list.remove(0); list.remove(i); // 0과 i + 1 비교 => remove(0)하면 하나 줄어드니까 remove(i)
                 list.add(0, newFromTo);
-                i = -1;
+                i = -1; // 아이템이 하나 줄어들었으니까
             }
         }
 

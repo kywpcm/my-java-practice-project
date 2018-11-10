@@ -22,7 +22,6 @@ public class P02 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//         System.out.println(input);
 
         List<Map<String, Integer>> list = primeFactor(Integer.parseInt(input));
 
@@ -45,26 +44,26 @@ public class P02 {
 
     private static List<Map<String, Integer>> primeFactor(int num) {
         List<Map<String, Integer>> list = new ArrayList<>();
+
         int n = 2;
-        int cnt = 1;
+        int cnt = 0;
         while (num > 1) {
             if (num % n == 0) {
+                cnt++;
                 num = num / n;
-                Map<String, Integer> map = new HashMap<>();
-                map.put("prime", n);
-                map.put("count", cnt);
                 int lastIdx = list.size() - 1;
                 if (!list.isEmpty() && list.get(lastIdx).get("prime") == n)
                     list.remove(lastIdx);
+                Map<String, Integer> map = new HashMap<>();
+                map.put("prime", n);
+                map.put("count", cnt);
                 list.add(map);
-                cnt++;
             } else {
                 n++;
-                cnt = 1;
+                cnt = 0;
             }
         }
-        // test
-//        System.out.println(list);
+
         return list;
     }
 
