@@ -13,13 +13,19 @@ public class RegularExpressionMain {
 		
 		System.out.println("1. " + "101aaab1b0b1".replaceAll("101", "❤"));
 		System.out.println("2. " + "aaa?bbb".replaceAll("[?]", "❤"));
-		System.out.println("3. " + "aaa!bbb".replaceAll("!", "❤"));
-		System.out.println("4. " + "aaa\"bbb".replaceAll("\"", "❤"));
-		System.out.println("5. " + "aaa\nbbb".replaceAll("\n", "❤"));
-		System.out.println("6. " + "aaa\nbbb".replaceAll("\\n", "❤"));
-		System.out.println("7. " + "aaa bbb".replaceAll("\\s", "❤"));
-		System.out.println("8. " + "aaa(bbb".replaceAll("\\(", "❤"));
-		System.out.println("9. " + "aaa[bbb".replaceAll("\\[", "❤"));
+		System.out.println("3.1 " + "aaa?bbb".replaceAll("\\?", "❤"));
+		System.out.println("3.2 " + "aaa.bbb".replaceAll("\\.", "❤"));
+		System.out.println("3.3 " + "aaa(bbb".replaceAll("\\(", "❤"));
+		System.out.println("3.4 " + "aaa[bbb".replaceAll("\\[", "❤"));
+		System.out.println("4. " + "aaa!bbb".replaceAll("!", "❤"));
+		System.out.println("5. " + "aaa\"bbb".replaceAll("\"", "❤"));
+		System.out.println("6.1 " + "aaa\nbbb".replaceAll("\n", "❤"));
+		System.out.println("6.2 " + "aaa\nbbb".replaceAll("\\n", "❤"));
+		System.out.println("7.1 " + "aaa\n\rbbb".replaceAll("\n\r", "❤"));
+		System.out.println("7.2 " + "aaa\n\rbbb".replaceAll("\\n\\r", "❤"));
+		System.out.println("8.1 " + "aaa\tbbb".replaceAll("\t", "❤"));
+		System.out.println("8.2 " + "aaa\tbbb".replaceAll("\\t", "❤"));
+		System.out.println("9. " + "aaa bbb".replaceAll("\\s", "❤"));
 		System.out.println("10. " + "aaa\\bbb".replaceAll("\\\\", "❤"));
 		
 		System.out.println("11. " + "aaabbb".replaceAll("^a", "❤"));
