@@ -15,7 +15,7 @@ public class SearchMain {
         int[] intArr = {4, 1, 3, 5, 2};
         Arrays.sort(intArr); // n^2
         int index = Arrays.binarySearch(intArr, 4); // logn
-        // => n^2 * logn
+        // => n^2 + logn
 
         System.out.println("indexOf 4 : " + index); // 위치
         if (index > 0) // 포함 여부
@@ -28,12 +28,12 @@ public class SearchMain {
         // Comparator 생략하면 디폴트 오름차순 정렬
         Arrays.sort(wIntArr); // nlogn
         index = Arrays.binarySearch(wIntArr, 4); // logn
-        // => n * (logn)^2
+        // => nlogn + logn
 
         // 2. Arrays.asList 후, List 검색
         List<Integer> list1 = Arrays.asList(wIntArr);
-        System.out.println("indexOf 4 : " + list1.indexOf(4)); // 위치, O(n)..?
-        System.out.println("contains 4 : " + list1.contains(4)); // 포함 여부, O(n)..?
+        System.out.println("indexOf 4 : " + list1.indexOf(4)); // 위치, O(n)
+        System.out.println("contains 4 : " + list1.contains(4)); // 포함 여부, O(n)
         System.out.println();
 
 
@@ -43,8 +43,8 @@ public class SearchMain {
         String[] strArr = {"apple", "banana", "cup", "desk", "egg"};
         List<String> list2 = Arrays.asList(strArr);
         System.out.println("key: 2 => contents: " + list2.get(2)); // 검색, O(1)
-        System.out.println("indexOf cup : " + list2.indexOf("cup")); // contents 위치, O(n)..?
-        System.out.println("contains cup : " + list2.contains("cup")); // contents 포함 여부, O(n)..?
+        System.out.println("indexOf cup : " + list2.indexOf("cup")); // contents 위치, O(n)
+        System.out.println("contains cup : " + list2.contains("cup")); // contents 포함 여부, O(n)
         System.out.println();
 
         /* List-Map 검색 */
