@@ -128,7 +128,8 @@ public class QueryTest {
 
     public String removeComment(String query) {
 //		return query.replaceAll("/\\*(?:.|[\\n\\r])*?\\*/\n", "");
-        return query.replaceAll("(?:/\\*(?:[^*]|(?:\\*+[^*/]))*\\*+/)|(?://.*)", "");
+//        return query.replaceAll("(?:/\\*(?:[^*]|(?:\\*+[^*/]))*\\*+/)|(?://.*)", ""); // (?:) : non-capturing group in Pattern
+        return query.replaceAll("(/\\*([^*]|(\\*+[^*/]))*\\*+/)|(//.*)", "");
     }
 
     public String removeCommentMo(String query) {
@@ -170,7 +171,7 @@ public class QueryTest {
 //        }
 
         String reStr = removeComment(input);
-//        System.out.println(reStr);
+        System.out.println(reStr);
 //        Assert.assert
     }
 
@@ -183,7 +184,7 @@ public class QueryTest {
         String input = sb.toString();
 
         String reStr = removeCommentMo(input);
-//        System.out.println(reStr);
+        System.out.println(reStr);
     }
 
 }

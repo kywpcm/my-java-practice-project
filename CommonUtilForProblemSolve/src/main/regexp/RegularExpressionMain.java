@@ -77,6 +77,11 @@ public class RegularExpressionMain {
 		System.out.println("45. " + "18-6-03".replaceAll(regex, "❤"));
 		System.out.println("46. " + "2018-6-03".replaceAll(regex, "❤"));
 		System.out.println("47. " + "1918-01-01".replaceAll(regex, "❤"));
+
+		// Pattern-Matcher 생각하면서 이해
+		// () : capturing group
+		// (?:) : non-capturing group
+		// 참고 : https://stackoverflow.com/questions/3512471/what-is-a-non-capturing-group-what-does-do
 	}
 
 }
