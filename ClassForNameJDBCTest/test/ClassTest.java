@@ -35,7 +35,7 @@ public class ClassTest {
     @Test
     public void testJDBC() throws ClassNotFoundException {
         /*****************************************************************
-         * - java.sql 패키지 JDBC SPI 제공
+         * - java.sql 패키지 JDBC SPI(Service Provider Interface) 제공
          *   - Connection 인터페이스
          *   - DriverManager 클래스
          * - Vendor가 구현해야 하는 부분
