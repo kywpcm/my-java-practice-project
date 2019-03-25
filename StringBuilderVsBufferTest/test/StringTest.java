@@ -18,6 +18,7 @@ public class StringTest {
         for (int i = 1; i <= 100000000; i++) {
             // String '+'는 1.5부터 컴파일러가 StringBuilder로 바꿔서 내부적으로 실행시킨다.
             // but, '+' 결과가 리턴될 때마다 StringBuilder의 toString 메소드가 호출되서 new String() 하게 됨.
+            // => 그냥 concat일 때는 +, 반복문일 때는 StringBuilder 고려 (백기선)
             // 최종적으로 char[] copy = new char[newLength] 때문에 java.lang.OutOfMemoryError: Java heap space 에러가 남.
             input = input + this.input;
             // String concat 메소드는 내부적으로 StringBuilder로 실행되진 않지만,
