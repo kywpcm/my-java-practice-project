@@ -48,6 +48,7 @@ public class SearchMain {
         System.out.println();
 
         /* List-Map 검색 */
+        // List가 아니라 Map 자체를 순회해야 하는 경우
         List<Map<String, Object>> list3 = new ArrayList<>();
         Map<String, Object> map1 = new HashMap<>(); map1.put("name", "apple"); map1.put("count", 2);
         list3.add(map1);
