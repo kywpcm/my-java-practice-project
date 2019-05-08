@@ -11,7 +11,7 @@ public class RegularExpressionMain {
 		 * - https://blog.outsider.ne.kr/360
 		 */
 		
-		System.out.println("1. " + "101aaab1b0b1".replaceAll("101", "❤")); // (101)과 동일
+		System.out.println("1. " + "101aaab1b0b1".replaceAll("101", "❤")); // "(101)"과 동일
 		System.out.println("2. " + "aaa?bbb".replaceAll("[?]", "❤"));
 		System.out.println("3.1 " + "aaa?bbb".replaceAll("\\?", "❤"));
 		System.out.println("3.2 " + "aaa.bbb".replaceAll("\\.", "❤"));
@@ -45,6 +45,11 @@ public class RegularExpressionMain {
 		System.out.println("25. " + "abcdef1234abcdef1234abcdef1a2b3c4d".replaceAll("([a-c0-9])", "❤"));
 		System.out.println("26. " + "abcdef1234abcdef1234abcdef1a2b3c4d".replaceAll("([a-c0-9]XXX)", "❤"));
 		System.out.println("27. " + "abcdef1234abcdef1234abcdef1a2b3c4XXXd".replaceAll("([a-c0-9]XXX)", "❤"));
+		// capturing group
+		// 다음과 같은 경우에 사용 : "^.*(login|error)\.html.*$"
+		// "^.*login|error\.html.*$" 또는 "^.*[login|error]\.html.*$"
+		// 이렇게 하면 원하는 결과가 안 나옴
+
 
 		/*
 		 * . : 어떤 문자라도 1글자가 올 수 있음 (wild card)
