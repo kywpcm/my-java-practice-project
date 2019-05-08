@@ -11,7 +11,7 @@ public class RegularExpressionMain {
 		 * - https://blog.outsider.ne.kr/360
 		 */
 		
-		System.out.println("1. " + "101aaab1b0b1".replaceAll("101", "❤"));
+		System.out.println("1. " + "101aaab1b0b1".replaceAll("101", "❤")); // (101)과 동일
 		System.out.println("2. " + "aaa?bbb".replaceAll("[?]", "❤"));
 		System.out.println("3.1 " + "aaa?bbb".replaceAll("\\?", "❤"));
 		System.out.println("3.2 " + "aaa.bbb".replaceAll("\\.", "❤"));
