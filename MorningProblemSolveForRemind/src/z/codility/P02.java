@@ -38,8 +38,8 @@ public class P02 {
 
     int max = 0;
     for (Map.Entry<Integer, Set<Number>> entry : map.entrySet()) {
-      int largestNum = 0;
-      int secondLargestNum = 0;
+      int largestNum;
+      int secondLargestNum;
 
       TreeSet<Number> treeSet = (TreeSet<Number>) entry.getValue();
       if (treeSet.size() > 1) {
