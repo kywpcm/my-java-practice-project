@@ -33,7 +33,7 @@ public class RegularExpressionMain {
 		System.out.println("13. " + "abcdef1a2b3c4d".replaceAll("[a-c]", "❤")); // or // [a-c] == [abc]
 		System.out.println("14. " + "abcdef1234".replaceAll("[a-c0-9]", "❤"));
 		System.out.println("15. " + "abcdef1234".replaceAll("[a-c0-9]{1,16}", "❤"));
-		System.out.println("16. " + "abcdef1234".replaceAll("[a-c0-9]{3,16}", "❤")); // {3, 16}은 앞의 캐릭터들([a-c0-9])이 최소 3개에서 최대 15개 이하로 나와야 함
+		System.out.println("16. " + "abcdef1234".replaceAll("[a-c0-9]{3,16}", "❤")); // {3, 16}은 앞의 캐릭터들([a-c0-9])이 최소 3개에서 최대 15개 이하로 나와도 됨
 		System.out.println("17. " + "abcdef1234".replaceAll("[a-c0-9]{4,16}", "❤"));
 		System.out.println("18. " + "abcdef1234".replaceAll("[a-c0-9]{5,16}", "❤"));
 		System.out.println("19. " + "abcdef1234".replaceAll("[0-9]{3}", "❤"));
