@@ -16,7 +16,7 @@ public class FileRead {
 
         int length;
         int destPos = 0;
-        while ((length = bis.read(readByteFromBuffer, 0, readByteFromBuffer.length)) > 0) {
+        while ((length = bis.read(readByteFromBuffer, 0, readByteFromBuffer.length)) != -1) {
             System.arraycopy(readByteFromBuffer, 0, outByte, destPos, length);
             destPos += length;
         }

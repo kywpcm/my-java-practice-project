@@ -5,3 +5,8 @@
 *.iml
 out
 gen
+
+# eclipse
+.classpath
+.project
+.settings

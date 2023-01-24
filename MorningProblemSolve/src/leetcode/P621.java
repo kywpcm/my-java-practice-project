@@ -7,7 +7,8 @@ import org.junit.Test;
 /**
  * <a href="https://leetcode.com/problems/task-scheduler/">
  *   https://leetcode.com/problems/task-scheduler/
- * </a><br>
+ * </a>
+ * <br>
  * Created by Kwon Youngwoo on 2019.07.08 10:20
  */
 public class P621 {
